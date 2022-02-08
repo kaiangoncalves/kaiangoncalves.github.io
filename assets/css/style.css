@@ -945,8 +945,10 @@
         padding: 1rem;
       }
     }
-    @media only screen and (max-width:320px)
+    @media only screen and (max-width:273px)
     {
-      
+      .scroll-down{
+        display: none;
+      }
 
     }
