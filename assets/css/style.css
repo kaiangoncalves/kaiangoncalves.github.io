@@ -596,11 +596,27 @@
       background-color: var(--color-primary);
       border-radius: 50%;
     }
-    
     .portfolio-item{
       flex: 0 0 33.33%;
       max-width: 33.33%;
       margin-bottom: var(--m-1-5);
+    }
+    .portfolio-item.hide{
+      display: none;
+    }
+    .portfolio-item.show{
+      display: block;
+      animation: showItem 0.5s ease;
+    }
+    @keyframes showItem{
+      0%{
+        transform: scale(0.6);
+        opacity: 0;
+      }
+      100%{
+        transform: scale(1);
+        opacity: 1;
+      }
     }
     .portfolio-item-inner{
       position: relative;
@@ -610,17 +626,16 @@
       border-radius: var(--border-radius);
     }
     .portfolio-item .mask{
-      background: rgba(0,0,0, .9);
+      background: rgba(0,0,0, .7);
       position: absolute;
       left: 0;
       top: 0;
       height: 100%;
       width: 100%;
-      opacity: 0;
-      transition: 0.3s;
+     
     }
     .portfolio-item-inner:hover .mask{
-      opacity: 0.9;
+      opacity: 0.7;
     }
     .portfolio-item .term{
       color: #fff;
@@ -633,44 +648,32 @@
       font-size: var(--small-font-size);
       display: inline-block;
       padding: 0.19rem 0.625rem;
-      transform: translateY(-40px);
       transition: 0.3s;
     }
     .portfolio-item h3{
       color: #fff;
-      font-size: 1.25rem;
-      margin: 0 0 0.98rem;
+      font-size: 10px;
+      letter-spacing: 2px;
       padding: 0 1.25rem;
       position: absolute;
-      top: 3.75rem;
+      top: 10rem;
+      left: 1.9rem;
       transition: 0.3s;
       transform: translateY(30px);
-      opacity: 0;
+      
     }
-    .portfolio-item .more-button{
-      color: #fff;
-      position: absolute;
-      bottom: var(--m-1-5);
-      left: var(--m-1-5);
-      font-size: 1.6rem;
-      display: block;
-      background: var(--color-primary);
-      height: 2.5rem;
-      width: 2.5rem;
-      cursor: pointer;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 28px;
-      transition: 0.3s;
-      opacity: 0;
-    }
+    
     .portfolio-item-inner:hover h3,
     .portfolio-item-inner:hover span{
-      opacity: 1;
+      opacity: 0.9;
       transform: translateY(0);
     }
 
-
+    .for-more{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     /*========== Testimonial ==========*/
     
     /*========== Blog ==========*/
@@ -827,6 +830,10 @@
       .about-img{
         text-align: center;
         margin-bottom: var(--m-2-5);
+      }
+      .services{
+        display: flex;
+        flex-direction: column;
       }
       .prices,
       .services .service-item{

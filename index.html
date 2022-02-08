@@ -37,10 +37,7 @@
                         <a href="#about" class="nav-link">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#experience" class="nav-link">Experiência</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#pricing" class="nav-link">Preços</a>
+                        <a href="#services" class="nav-link">Serviços</a>
                     </li>
                     <li class="nav-item">
                         <a href="#portfolio" class="nav-link">Portfolio</a>
@@ -76,15 +73,13 @@
                     <span>Desenvolvedor <span clas="info-text">Full Stack</span></span>
                     <!-- social icons -->
                     <ul class="social-icons">
-                        <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
-                        <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
-                        <li><a href="#"><i class="lni lni-behance-original"></i></a></li>
-                        <li><a href="#"><i class="lni lni-dribbble"></i></a></li>
-                        <li><a href="#"><i class="lni lni-pinterest"></i></a></li>
+                        <li><a href="https://www.instagram.com/kaiangoncalves/" target="_blank"><i class="lni lni-instagram-original"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/kaian-gonçalves-14b3a417a/" target="_blank"><i class="lni lni-linkedin"></i></a></li>
+                        <li><a href="https://github.com/kaiangoncalves" target="_blank"><i class="lni lni-github"></i></a></li>
                     </ul>
                     <!-- button -->
                     <div>
-                        <a href="#" class="btn btn-default">Contrate-me</a>
+                        <a href="https://bit.ly/kaian-contato" target="_blank" class="btn btn-default">Contrate-me</a>
                     </div>
                     <!-- scroll down mouse wheel -->
                     <div class="scroll-down">
@@ -114,7 +109,7 @@
                             <div class="row">
                                 <div class="about-text padd-15">
                                     <!-- about -->
-                                    <p>Meu nome é Kaian, futuro desenvolvedor FullStack. Tenho experiência em criação de filtros para Instagram e com softwares de edição de vídeo. </p>
+                                    <p>Meu nome é Kaian, futuro desenvolvedor FullStack. Tenho experiência em criação de filtros para Instagram, softwares de edição de vídeo/imagem. </p>
                                     <div>
                                         <a href="#" class="btn btn-default">GitHub</a>
                                     </div>
@@ -157,14 +152,14 @@
                         <i class="lni lni-thumbs-up"></i>
                         <div class="details">
                             <h3>100+</h3>
-                            <p>Project Feitos</p>
+                            <p>Projetos Feitos</p>
                         </div>
                     </div>
                     <!-- fact item -->
                     <div class="fact-item padd-15">
                         <i class="lni lni-coffee-cup"></i>
                         <div class="details">
-                            <h3>6798</h3>
+                            <h3>977</h3>
                             <p>Copos de Café</p>
                         </div>
                     </div>
@@ -180,7 +175,7 @@
             </div>
         </section>
         <!--=============== Services ===============-->
-        <section class="services section">
+        <section class="services section" id="services">
             <div class="container">
                 <!-- section title -->
                 <h2 class="section-title padd-15">Serviços</h2>
@@ -190,7 +185,7 @@
                         <div class="service-item-inner" style="background: rgb(108,108,229);">
                             <img src="assets/img/service-1.svg" alt="">
                             <h3>Design</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <p>Solicite uma arte animada ou estática!</p>
                         </div>
                     </div>
                     <!-- service item -->
@@ -198,7 +193,7 @@
                         <div class="service-item-inner" style="background: rgb(249,215,76);">
                             <img src="assets/img/service-2.svg" alt="">
                             <h3>Desenvolvedor</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <p>Desenvolvimento Front-end, Back-end.</p>
                         </div>
                     </div>
                     <!-- service item -->
@@ -206,12 +201,12 @@
                         <div class="service-item-inner" style="background: rgb(249,123,139);">
                             <img src="assets/img/service-3.svg" alt="">
                             <h3>Filtros</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <p>Mande sua ideia que irei transformar em um lindo filtro para Instagram!</p>
                         </div>
                     </div>
                 </div>
                 <div class="text padd-15">
-                    <p>Procurando por um algo? <a href="#">Clique aqui</a> para me contatar! 👋</p>
+                    <p>Procurando por um algo? <a href="https://bit.ly/kaian-contato" target="_blank">Clique aqui</a> para me contatar! 👋</p>
                 </div>
             </div>
         </section>
@@ -225,8 +220,9 @@
                 <div class="row">
                     <div class="portfolio-filter padd-15">
                         <div class="portfolio-filter-inner">
-                            <button type="button" class="active" data-filter="all">Filtros</button>
-                            <button type="button" data-filter="art">Artes</button>
+                            <button type="button" class="active" data-filter="all">Todos</button>
+                            <button type="button" data-filter="dev">Desenvolvimento Web/Mobile</button>
+                            <button type="button" data-filter="art">Design</button>
                             <button type="button" data-filter="creative">Motion</button>
                             <button type="button" data-filter="design">Vídeos</button>
                         </div>
@@ -238,77 +234,92 @@
 
 <div class="row"> 
     <!-- portfolio item -->
-    <div class="portfolio-item padd-15">
+    <div class="portfolio-item padd-15" data-category="art">
         <div class="portfolio-item-inner">
             <div class="portfolio-item-thumbnail">
-                <img src="assets/img/xanxan.png" alt="">
-                <div class="mask"></div>
+                <img src="assets/img/img1.png" alt="">
+                <a href="https://www.behance.net/gallery/136926725/Arte-Anderson-Vieira" target="_blank"><div class="mask"></div></a>
             </div>
             <span class="term">Art, design</span>
-            <h3 class="portfolio-item-title">Project Management Illustration</h3>
-            <span class="more-button">&hellip;</span>
+            <h3 class="portfolio-item-title">clique para visualizar</h3>
         </div>
     </div>  
     <!-- portfolio item -->
-    <div class="portfolio-item padd-15">
+    <div class="portfolio-item padd-15" data-category="art">
         <div class="portfolio-item-inner">
             <div class="portfolio-item-thumbnail">
-                <img src="assets/img/xanxan.png" alt="">
-                <div class="mask"></div>
+                <img src="assets/img/img2.png" alt="">
+                <a href="https://www.behance.net/gallery/136926877/AD-Filtros" target="_blank"><div class="mask"></div></a>
             </div>
-            <span class="term">Creative</span>
-            <h3 class="portfolio-item-title">Onboaeding Motivation</h3>
-            <span class="more-button">&hellip;</span>
+            <span class="term">Art, design</span>
+            <h3 class="portfolio-item-title">clique para visualizar</h3>
+            
         </div>
     </div>
     <!-- portfolio item -->
-    <div class="portfolio-item padd-15">
+    <div class="portfolio-item padd-15" data-category="art">
         <div class="portfolio-item-inner">
             <div class="portfolio-item-thumbnail">
-                <img src="assets/img/xanxan.png" alt="">
-                <div class="mask"></div>
+                <img src="assets/img/img3.png" alt="">
+                <a href="https://www.behance.net/gallery/136926991/AD-smartwatch" target="_blank"><div class="mask"></div></a>
             </div>
             <span class="term">Art, design</span>
-            <h3 class="portfolio-item-title">Project Management Illustration</h3>
-            <span class="more-button">&hellip;</span>
+            <h3 class="portfolio-item-title">clique para visualizar</h3>
+            
         </div>
     </div>
     <!-- portfolio item -->
-    <div class="portfolio-item padd-15">
+    <div class="portfolio-item padd-15" data-category="art">
         <div class="portfolio-item-inner">
             <div class="portfolio-item-thumbnail">
-                <img src="assets/img/xanxan.png" alt="">
-                <div class="mask"></div>
+                <img src="assets/img/img4.png" alt="">
+                <a href="https://www.behance.net/gallery/136927047/Banner-Camila-V1" target="_blank"><div class="mask"></div></a>
             </div>
             <span class="term">Art, design</span>
-            <h3 class="portfolio-item-title">Project Management Illustration</h3>
-            <span class="more-button">&hellip;</span>
+            <h3 class="portfolio-item-title">clique para visualizar</h3>
+            
         </div>
     </div>
     <!-- portfolio item -->
-    <div class="portfolio-item padd-15">
+    <div class="portfolio-item padd-15" data-category="art">
         <div class="portfolio-item-inner">
             <div class="portfolio-item-thumbnail">
-                <img src="assets/img/xanxan.png" alt="">
-                <div class="mask"></div>
+                <img src="assets/img/img5.png" alt="">
+                <a href="https://www.behance.net/gallery/136927097/Banner-Camila-V2" target="_blank"><div class="mask"></div></a>
             </div>
-            <span class="term">Art, design</span>
-            <h3 class="portfolio-item-title">Project Management Illustration</h3>
-            <span class="more-button">&hellip;</span>
+            <span class="term">Art, design</span>]
+            <h3 class="portfolio-item-title">clique para visualizar</h3>
+            
         </div>
     </div>
     <!-- portfolio item -->
-    <div class="portfolio-item padd-15">
+    <div class="portfolio-item padd-15" data-category="art">
         <div class="portfolio-item-inner">
             <div class="portfolio-item-thumbnail">
-                <img src="assets/img/xanxan.png" alt="">
-                <div class="mask"></div>
+                <img src="assets/img/img6.png" alt="">
+                <a href="https://www.behance.net/gallery/136927137/Banner-Camila-V3" target="_blank"><div class="mask"></div></a>
             </div>
             <span class="term">Art, design</span>
-            <h3 class="portfolio-item-title">Project Management Illustration</h3>
-            <span class="more-button">&hellip;</span>
+            <h3 class="portfolio-item-title">clique para visualizar</h3>
+            
         </div>
     </div>
+    <!-- portfolio item -->
+    <div class="portfolio-item padd-15" data-category="art">
+        <div class="portfolio-item-inner">
+            <div class="portfolio-item-thumbnail">
+                <img src="assets/img/img7.png" alt="">
+                <a href="https://www.behance.net/gallery/136927239/Banner-Edina" target="_blank"><div class="mask"></div></a>
+            </div>
+            <span class="term">Art, design</span>
+            <h3 class="portfolio-item-title">clique para visualizar</h3>
+            
+        </div>
+    </div>
+    </div>
+
+    <div class="text padd-15">
+        <p>Quer ver mais? <a href="https://github.com/kaiangoncalves" target="_blank">Clique aqui</a> para visualizar todos projetos.</p>
     </div>
 
                   
